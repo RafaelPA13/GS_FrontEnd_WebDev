@@ -172,6 +172,17 @@ header #btn-mobile{
 
 /* Fim Sessão 1 - Problema */
 
+/* Sessão 2 - Tecnologias */
+.tecnologia{
+    height: 75vh;
+    background-image: linear-gradient(to top, rgba(0, 21, 48, 0.8),
+    rgba(0, 21, 48, 0.3)), url(../images/bg-sessao2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 50%;
+}
+/* Fim Sessão 2 - Tecnologias */
+
 /* Responsividade */
 @media(width <= 950px) {  
     .problema{
