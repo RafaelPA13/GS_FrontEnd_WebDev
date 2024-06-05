@@ -30,7 +30,10 @@
       <header>
         <h1>OCEANS GUARD</h1>
         <nav>
-          <ul>
+          <button id="btn-mobile" onclick="alternarMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="links">
             <li><a href="#problema">Problema</a></li>
             <li><a href="">link2</a></li>
             <li><a href="">link3</a></li>
@@ -49,7 +52,7 @@
     </div>
 
     <!-- Sessão 1 Problema -->
-    <section class="problema">
+    <section class="problema" id="problema">
         <div class="foto-problema">
             <img src="../images/lixo_oceanos.jpg" alt="Copo de plástico no mar">
         </div>
@@ -61,5 +64,8 @@
         </div>
     </section>
     <!-- Fim Sessão 1 Problema -->
+    
+    <!-- Importe JS -->
+    <script src="../js/script.js"></script>
   </body>
 </html>
