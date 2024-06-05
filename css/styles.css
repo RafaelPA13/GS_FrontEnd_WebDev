@@ -1,0 +1,13 @@
+:root {
+    --font: 'Roboto', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Fim Reset CSS */
