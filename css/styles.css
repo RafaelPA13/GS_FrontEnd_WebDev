@@ -133,7 +133,6 @@ header #btn-mobile {
 .foto-problema img {
     width: 70%;
     box-shadow: 1px 1px 30px #999;
-    border-radius: 7px;
 }
 
 .texto-problema {
