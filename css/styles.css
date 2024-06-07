@@ -310,6 +310,7 @@ header #btn-mobile {
     rgba(0, 21, 48, 0.3)), url(../images/bolhas-mar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 80vh;
     margin: 50px auto;
     display: flex;
     flex-direction: column;
@@ -414,6 +415,53 @@ header #btn-mobile {
 }
 /* Fim Sessão 5 - Solução */
 
+/* Sessão 6 - Cotidiano */
+.cotidiano {
+    background-image: linear-gradient(to top, rgba(0, 21, 48, 0.8),
+    rgba(0, 21, 48, 0.3)), url(../images/arraias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.cotidiano h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--color-dark-cyan);
+    font-size: 35px;
+}
+
+.mensagem button {
+    display: flex;
+    margin: 200px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-size: 35px;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.mensagem button:hover {
+    background-color: #2f2f2f;
+}
+
+.mensagem p {
+    display: flex;
+    margin: auto 100px;
+    text-align: center;
+    font-size: 30px;
+    text-wrap: balance;
+    color: var(--color-light);
+}
+/* Fim Sessão 6 - Cotidiano */
+
 /* Responsividade */
 @media(width <=950px) {
     .problema {
@@ -512,6 +560,22 @@ header #btn-mobile {
     .carrossel-container img {
         height: 250px;
         width: 350px;
+    }
+
+    .cotidiano h1 {
+        font-size: 25px;
+        color: var(--color-light);
+    }
+    
+    .mensagem button {
+        margin: 50px auto;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .mensagem p {
+        margin: 10px 20px;
+        font-size: 15px;
     }
     
 }
