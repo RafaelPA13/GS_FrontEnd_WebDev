@@ -47,7 +47,7 @@ function ajustarResponsividade() {
 }
 
 ajustarResponsividade();
-window.addEventListener('resize', ajustarResponsividade());
+window.addEventListener('resize', ajustarResponsividade);
 
 let intervaloCarrossel = setInterval(carrossel, tempoIntervalo);
 // Fim Sessão 5 - Solução 
