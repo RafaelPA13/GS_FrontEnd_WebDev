@@ -18,4 +18,24 @@ function checarResposta() {
       explicacao.style.color = "red";
     }
   }
+// Fim Sessão 4 - Público-alvo
+
+// Sessão 5 - Solução
+const imgs = document.getElementById("img-carrossel");
+const img = document.querySelectorAll("#img-carrossel img");
+
+let idx = 0;
+
+function carrossel(){
+  idx++;
+
+  if(idx >  img.length - 1){
+    idx = 0;
+  }
+
+  imgs.style.transform = `translateX(${-idx * 1250}px)`
+}
+
+setInterval(carrossel, 3500)
+// Fim Sessão 5 - Solução 
   

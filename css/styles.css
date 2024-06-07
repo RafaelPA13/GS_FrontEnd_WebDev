@@ -377,6 +377,43 @@ header #btn-mobile {
 }
 /* Fim Sessão 4 - Público-alvo */
 
+/* Sessão 5 - Solução */
+.solucao {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.solucao h1 {
+    padding-top: 30px;
+    color: var(--color-dark-cyan);
+    font-size: 35px;
+}
+
+.carrossel {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    width: 1250px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrossel-container img {
+    object-fit: cover;
+    height: 500px;
+    width: 1250px;
+
+}
+/* Fim Sessão 5 - Solução */
+
 /* Responsividade */
 @media(width <=950px) {
     .problema {
