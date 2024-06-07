@@ -37,9 +37,9 @@
             <li><a href="#problema">Problema</a></li>
             <li><a href="#tecnologia">Tecnologias</a></li>
             <li><a href="#objetivo">Objetivos</a></li>
-            <li><a href="">link4</a></li>
-            <li><a href="">link5</a></li>
-            <li><a href="">link6</a></li>
+            <li><a href="#publico">Público-alvo</a></li>
+            <li><a href="#solucao">Solução</a></li>
+            <li><a href="#cotidiano">Dia-a-dia</a></li>
           </ul>
         </nav>
       </header>
@@ -63,7 +63,7 @@
           A poluição dos oceanos ameaça a vida marinha, destrói ecossistemas,
           contamina alimentos e prejudica a saúde humana e ambiental.
         </p>
-        <a href="">Qual a Solução</a>
+        <a href="#solucao">Qual a Solução?</a>
       </div>
     </section>
     <!-- Fim Sessão 1 Problema -->
@@ -155,6 +155,58 @@
       </div>
     </section>
     <!-- Fim Sessão 3 - Obejetivos -->
+
+    <!-- Sessão 4 - Público-alvo -->
+    <section class="publico" id="publico">
+      <h1>Qual público será impactado?</h1>
+      <div class="questao">
+        <div class="opcoes">
+          <label> 
+            <input type="radio" name="resposta" value="incorreto">
+            <p>Empresas de Tecnologia</p> 
+          </label>
+          <label>
+            <input type="radio" name="resposta" value="correto">
+            <p>A vida marinha e a Humanidade</p>
+          </label>
+          <label>
+            <input type="radio" name="resposta" value="incorreto">
+            <p>Indústria do Cinema</p>
+          </label>
+          <label>
+            <input type="radio" name="resposta" value="incorreto">
+            <p>A democracia</p>
+          </label>
+        </div>
+        <button onclick="checarResposta()">Descobrir</button>
+        <p id="explicacao"></p>
+      </div>
+    </section>
+    
+    <!-- Fim Sessão 4 - Público-alvo -->
+
+    <!-- Sessão 5 - Solução -->
+     <section class="solucao" id="solucao">
+      <h1>Os benefícios dessa solução</h1>
+      <div class="carrossel">
+        <div class="carrossel-container" id="img-carrossel">
+          <img src="../images/carrossel/monitoramento.png" alt="Imagem 1 do Carrossel">
+          <img src="../images/carrossel/operacao.png" alt="Imagem 2 do Carrossel">
+          <img src="../images/carrossel/sustentabilidade.png" alt="Imagem 3 do Carrossel">
+        </div>
+      </div>
+     </section>
+    <!-- Fim Sessão 5 - Solução -->
+
+    <!-- Sessão 6 - Cotidiano -->
+    <section class="cotidiano" id="cotidiano">
+      <h1>E no dia a dia?</h1>
+      <div class="mensagem">
+        <button onclick="mostrarMsg()">Clique para revelar</button>
+        <p id="msg"></p> 
+      </div>
+    </section>    
+    <!-- Fim Sessão 6 - Cotidiano -->
 
     <!-- Importe JS -->
     <script src="../js/script.js"></script>

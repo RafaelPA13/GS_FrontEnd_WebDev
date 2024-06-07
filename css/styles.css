@@ -101,7 +101,7 @@ header #btn-mobile {
 
     & p {
         width: 60%;
-        text-warp: balance;
+        text-wrap: balance;
         line-height: 1.6;
     }
 
@@ -166,7 +166,7 @@ header #btn-mobile {
 .texto-problema h3 {
     color: var(--color-dark);
     font-size: clamp(18px, 2vw, 35px);
-    tex-wrap: balance;
+    text-wrap: balance;
     line-height: 1.3;
 }
 
@@ -304,6 +304,164 @@ header #btn-mobile {
 
 /* Fim Sessão 3 -Objetivos */
 
+/* Começo Sessão 4 - Público-alvo */
+.publico {
+    background-image: linear-gradient(to top, rgba(0, 21, 48, 0.8),
+    rgba(0, 21, 48, 0.3)), url(../images/bolhas-mar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.publico h1 {
+    padding-top: 30px;
+    color: var(--color-light-cyan);
+    font-size: 35px;
+}
+
+.questao {
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-light-cyan);
+    border-radius: 10px;
+}
+
+.opcoes label {
+    display: block;
+    margin: 20px auto;
+}
+
+.opcoes label input[type="radio"] {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-dark);
+    border-radius: 100%;
+    margin-left: 87%;
+    transition: .5s ease-in;
+}
+
+.opcoes label input[type="radio"]:checked {
+    background-color: var(--color-dark-cyan);
+}
+
+.opcoes p {
+    font-size: 25px;
+    color: var(--color-dark);
+}
+
+.questao button {
+    display: flex;
+    margin-left: 80%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark-cyan);
+    color: var(--color-light);
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#explicacao {
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Fim Sessão 4 - Público-alvo */
+
+/* Sessão 5 - Solução */
+.solucao {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.solucao h1 {
+    padding-top: 30px;
+    color: var(--color-dark-cyan);
+    font-size: 35px;
+}
+
+.carrossel {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+    width: 1250px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrossel-container img {
+    object-fit: cover;
+    height: 500px;
+    width: 1250px;
+
+}
+/* Fim Sessão 5 - Solução */
+
+/* Sessão 6 - Cotidiano */
+.cotidiano {
+    background-image: linear-gradient(to top, rgba(0, 21, 48, 0.8),
+    rgba(0, 21, 48, 0.3)), url(../images/arraias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.cotidiano h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: var(--color-dark-cyan);
+    font-size: 35px;
+}
+
+.mensagem button {
+    display: flex;
+    margin: 200px auto;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-size: 35px;
+    padding: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.mensagem button:hover {
+    background-color: #2f2f2f;
+}
+
+.mensagem p {
+    display: flex;
+    margin: auto 100px;
+    text-align: center;
+    font-size: 30px;
+    text-wrap: balance;
+    color: var(--color-light);
+}
+/* Fim Sessão 6 - Cotidiano */
+
 /* Responsividade */
 @media(width <=950px) {
     .problema {
@@ -359,6 +517,67 @@ header #btn-mobile {
     .foto-agua-viva img {
         width: 100%;
     }
+
+    .publico h1 {
+        font-size: 25px;
+    }
+
+    .questao {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .opcoes label input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .opcoes p {
+        font-size: 15px;
+    }
+
+    .questao button {
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #explicacao {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .solucao h1 {
+        font-size: 25px;
+    }
+
+    .carrossel {
+        height: 250px;
+        width: 350px;
+    }
+
+    .carrossel-container img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .cotidiano h1 {
+        font-size: 25px;
+        color: var(--color-light);
+    }
+    
+    .mensagem button {
+        margin: 50px auto;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .mensagem p {
+        margin: 10px 20px;
+        font-size: 15px;
+    }
+    
 }
 
 @media(width <=650px) {
