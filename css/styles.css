@@ -462,6 +462,31 @@ header #btn-mobile {
 }
 /* Fim Sessão 6 - Cotidiano */
 
+/* Footer */
+footer {
+    background-color: var(--color-dark);
+    height: 4vw;
+    color: var(--color-light);
+}
+
+.footer-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-container span{
+    font-size: 30px;
+}
+
+.footer-container a{
+    font-size: 30px;
+    font-weight: 300;
+}
+/* Fim Footer */
+
+
 /* Responsividade */
 @media(width <=950px) {
     .problema {
