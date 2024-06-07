@@ -602,6 +602,18 @@ footer {
         margin: 10px 20px;
         font-size: 15px;
     }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-container span {
+        font-size: 10px;
+    }
+
+    .footer-container a {
+        font-size: 10px;
+    }
     
 }
 
