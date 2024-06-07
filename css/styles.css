@@ -133,7 +133,6 @@ header #btn-mobile {
 .foto-problema img {
     width: 70%;
     box-shadow: 1px 1px 30px #999;
-    border-radius: 7px;
 }
 
 .texto-problema {
@@ -190,20 +189,20 @@ header #btn-mobile {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 75px;
+    gap: 35px;
 }
 
 .tecnologia h1 {
     text-align: center;
     color: var(--color-cyan);
     font-size: 35px;
-    margin-top: 30px;
 }
 
 .lista-tecnologias {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .item-tecnologia {
@@ -241,6 +240,70 @@ header #btn-mobile {
 
 /* Fim Sessão 2 - Tecnologias */
 
+/* Sessão 3 -Objetivos */
+.objetivo {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.objetivo h1 {
+    text-align: center;
+    color: var(--color-dark-cyan);
+    font-size: 35px;
+}
+
+.conteudo-objetivos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lista-objetivos {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lista-objetivos .item-objetivo {
+    width: 70%;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-dark-cyan);
+    display: flex;
+    gap: 15px;
+}
+
+.item-objetivo h1 {
+    font-size: 30px;
+}
+
+.item-objetivo h3 {
+    color: var(--color-cyan);
+}
+
+.item-objetivo p {
+    color: var(--color-dark);
+}
+
+.foto-agua-viva {
+    width: 35%;
+    height: 100%;
+    text-align: center;
+}
+
+.foto-agua-viva img {
+    width: 95%;
+    height: 100%;
+}
+
+/* Fim Sessão 3 -Objetivos */
+
 /* Responsividade */
 @media(width <=950px) {
     .problema {
@@ -263,17 +326,38 @@ header #btn-mobile {
         margin-bottom: 0;
     }
 
-    .tecnologia .lista-tecnologias {
-        width: 75%;
-    }
-
     .lista-tecnologias {
-        flex-direction: column;
+        width: 100%;
     }
 
     .item-tecnologia {
-        height: 100vmin;
+        width: 70%;
+    }
+
+    .objetivo {
+        width: 85%;
+    }
+
+    .conteudo-objetivos {
+        gap: 30px;
+    }
+
+    .lista-objetivos {
         width: 75%;
+        align-items: center;
+    }
+
+    .lista-objetivos .item-objetivo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-agua-viva {
+        width: 75%;
+    }
+
+    .foto-agua-viva img {
+        width: 100%;
     }
 }
 
@@ -289,7 +373,6 @@ header #btn-mobile {
     header .links {
         height: 0px;
         position: absolute;
-        width: 100%;
         top: 70px;
         left: 30px;
         transition: var(--transition);
@@ -305,6 +388,11 @@ header #btn-mobile {
         height: calc(100vh - 70px);
         visibility: visible;
         overflow-y: auto;
+    }
+
+    .item-tecnologia {
+        width: 70%;
+        height: 100vmin;
     }
 }
 
