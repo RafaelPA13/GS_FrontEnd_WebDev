@@ -432,6 +432,36 @@ header #btn-mobile {
     .foto-agua-viva img {
         width: 100%;
     }
+
+    .publico h1 {
+        font-size: 25px;
+    }
+
+    .questao {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .opcoes label input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .opcoes p {
+        font-size: 15px;
+    }
+
+    .questao button {
+        margin-top: 20px;
+        margin-left: auto;
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    #explicacao {
+        margin-top: 30px;
+        font-size: 15px;
+    }
 }
 
 @media(width <=650px) {
