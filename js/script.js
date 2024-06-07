@@ -25,17 +25,30 @@ const imgs = document.getElementById("img-carrossel");
 const img = document.querySelectorAll("#img-carrossel img");
 
 let idx = 0;
+let larguraImagem = 350;
+let tempoIntervalo = 2500;
 
-function carrossel(){
+function carrossel() {
   idx++;
 
-  if(idx >  img.length - 1){
+  if (idx > img.length - 1) {
     idx = 0;
   }
 
-  imgs.style.transform = `translateX(${-idx * 1250}px)`
+  imgs.style.transform = `translateX(${-idx * larguraImagem}px)`;
 }
 
-setInterval(carrossel, 3500)
+function ajustarResponsividade() {
+  if (window.innerWidth <= 950) {
+    larguraImagem = 350;
+  } else {
+    larguraImagem = 1250;
+  }
+}
+
+ajustarResponsividade();
+window.addEventListener('resize', ajustarResponsividade);
+
+let intervaloCarrossel = setInterval(carrossel, tempoIntervalo);
 // Fim Sessão 5 - Solução 
   

@@ -499,6 +499,21 @@ header #btn-mobile {
         margin-top: 30px;
         font-size: 15px;
     }
+
+    .solucao h1 {
+        font-size: 25px;
+    }
+
+    .carrossel {
+        height: 250px;
+        width: 350px;
+    }
+
+    .carrossel-container img {
+        height: 250px;
+        width: 350px;
+    }
+    
 }
 
 @media(width <=650px) {
